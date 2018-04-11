@@ -94,7 +94,6 @@ img{
 	width: 100%;
 }
 div#contact{
-	border: solid blue;
 	padding: 50px;
 	background-color: #f5f5f5;
 }
@@ -142,7 +141,6 @@ input[type=submit]:hover {
 }
 
 .row{
-	border: solid red;
 	overflow: hidden;/*solucion a float left*/
 }
 
