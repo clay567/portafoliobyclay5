@@ -1,0 +1,185 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	/*background:#FFFFFA;*/
+}
+
+header {
+	width:100%;
+}
+
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#000;
+}
+
+.menu_bar {
+	display:none;
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+header nav ul li span {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background:#555;
+}
+
+section {
+	padding:20px;
+}
+
+@media screen and (max-width:800px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}
+
+img{
+	width: 100%;
+}
+div#contact{
+	border: solid blue;
+	padding: 50px;
+	background-color: #f5f5f5;
+}
+input[type=text],input[type=email],textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: inline-block;
+    /*border: 1px solid lightgreen;*/
+    border-color: transparent;
+    /*border-radius: 4px;*/
+    box-sizing: border-box;
+    outline: none;
+}
+textarea{
+	height: 100px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+textarea:focus {
+    border: 3px solid #555;
+}
+/* Sugerencia: use ancho: 100% para botones de ancho completo */
+input[type=submit] {
+    /*width: 100%;*/
+    color: #fff;
+	background-color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    /*border-radius: 4px;*/
+    cursor: pointer;
+
+    margin-left: 8px;
+}
+
+input[type=submit]:hover {
+    background-color: transparent;
+	color: #000;
+	/*border-color:#000;*/ 
+}
+
+.row{
+	border: solid red;
+	overflow: hidden;/*solucion a float left*/
+}
+
+.column{
+	/*border: solid blue;*/
+	width: 50%;
+	float: left;
+}
+
+.row .column img{
+	width: 100%;/*ocupa un ancho del 100% de su contenedor*/
+	margin-bottom: -8px;
+}
+
+/*las imagenes son elementos de tipo inline,
+si quieres ver el borde establece primero el ancho y el alto*/
+/*img{
+	width: 50px;
+	height: 50px;
+	border:5px solid lightblue;
+}*/
+
+footer{
+	/*border: solid yellow;*/
+	background-color: #555;
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 100px;
+	font-style: italic;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: lightgreen;
+}
